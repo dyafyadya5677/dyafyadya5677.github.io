@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('7.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+        }
+
+        .tarjeta {
+            background: #BBFBA2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            width: 300px;
+            text-align: center;
+            color: black;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: black;
+            color: black;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilos para los nuevos contenedores dinámicos */
+        .contenedores-adicionales {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contenedor-dinamico {
+            background: #4CAF50;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 45%;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contenedor-dinamico:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #4CAF50;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="menu.css">
+    <nav style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="inicio.html">Inicio</a>
+        </div>
+        <br><br>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="galeria.html">Galería</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 200px;">
+            <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="Proceso%20de%20Instalacion.html">Proceso de Instalación</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="informacion2y4.html">Información 2 y 4 semestre</a>
+        </div>
+         <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="Recursos%20Adicionales.html">Recursos Adicionales</a>
+        </div>
+    </nav>
+
+    <h1>ENCUENTRA MÁS INFORMACIÓN CON LOS ALUMNOS DE 2 Y 4 SEMESTRE</h1>
+
+    <!-- Tarjetas informativas -->
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h2>Segundo Semestre</h2>
+            <p>Información fundamental obtenida sobre la acuaponia.</p>
+        </div>
+        <div class="tarjeta">
+            <h2>Cuarto Semestre</h2>
+            <p>Información sobre todo el proceso del sistema acuapónico.</p>
+        </div>
+    </div>
+
+    <!-- Contenedores dinámicos -->
+    <div class="contenedores-adicionales">
+        <div class="contenedor-dinamico">
+            <h2>Beneficios de la Acuaponia</h2>
+            <p>Descubre cómo este sistema combina el cultivo de plantas y peces de forma sostenible, reduciendo el uso de agua y mejorando la producción de alimentos.</p>
+        </div>
+        
+        <div class="contenedor-dinamico">
+            <h2>Impacto Ambiental</h2>
+            <p>La acuaponia es una solución ecológica para la producción de alimentos. Aprende cómo ayuda a reducir el desperdicio y fomenta la agricultura responsable.</p>
+        </div>
+    </div>
+      <article style="background-color: #f0f8ff; border: 7px solid #add8e6; border-radius: 20px; padding: 15px; width: 1000px; text-align: center; margin: 20px auto; display: flex; align-items: center; gap: 15px;">
+    <img src="segundosemestre.jpg.jpg" alt="Imagen del artículo" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <div> 
+     
+</body>
+</html>

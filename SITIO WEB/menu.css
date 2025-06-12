@@ -1,0 +1,10 @@
+ /* Menú de navegación */ nav div { background-color: #2F7F0E; /* Verde lima */ border: 2px solid #006400; /* Verde oscuro */ border-radius: 5px; padding: 10px; color: white; } nav div a { color: white; text-decoration: none; font-size: 18px; font-weight: bold; } nav div:hover { background-color: #228B22; /* Verde bosque en hover */ } /* Banner */ header h1 { font-size: 30px; /* Aumenté el tamaño de la letra */ font-family: 'Georgia', serif; /* Nueva tipografía elegante */ color: #006400; /* Verde oscuro */ text-shadow: 3px 3px #32CD32; /* Sombra para destacar */ border: 5px solid #006400; /* Borde reforzado */ border-radius: 15px; background-color: #98FB98; /* Verde pastel */ padding: 25px; margin: 20px auto; width: 80%;
+    
+    
+    
+    
+    
+    
+    
+    
+    
