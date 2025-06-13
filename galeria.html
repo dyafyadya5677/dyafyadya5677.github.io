@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <style>
+        /* Estilos generales del cuerpo */
+        body {
+            font-family: Arial, sans-serif; /* Fuente de texto */
+             background-image: url('7.jpg'); /* Ruta de la imagen de fondo */ /* Color de fondo oscuro */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el contenido */
+        }
+
+        /* Contenedor de la galería */
+        .gallery-container {
+            overflow: hidden; /* Oculta el contenido que se desborda */
+            width: 60%; /* Define el ancho del contenedor */
+            height: 500px; /* Altura fija para visualizar el desplazamiento */
+            margin: 30px auto; /* Centra el contenedor */
+            position: relative; /* Posicionamiento relativo */
+        }
+
+        /* Contenedor de imágenes dentro de la galería */
+        .gallery {
+            display: flex; /* Usa flexbox para organizar los elementos */
+            flex-direction: column; /* Establece el flujo en dirección vertical */
+            gap: 20px; /* Espaciado entre imágenes */
+            animation: slide 100s linear infinite; /* Aplica animación de desplazamiento */
+        }
+
+        /* Estilos de las imágenes */
+        .gallery img {
+            width: 90%; /* Hace las imágenes más grandes */
+            height: auto; /* Mantiene la proporción de las imágenes */
+            border-radius: 10px; /* Agrega bordes redondeados */
+            transition: transform 0.5s ease-in-out; /* Suaviza la animación */
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3); /* Agrega sombra */
+        }
+
+        /* Efecto al pasar el mouse sobre las imágenes */
+        .gallery img:hover {
+            transform: scale(1.1); /* Hace zoom al pasar el cursor */
+            box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.6); /* Aumenta la sombra */
+        }
+
+        /* Animación para mover las imágenes hacia arriba */
+        @keyframes slide {
+            0% { transform: translateY(0); } /* Posición inicial */
+            100% { transform: translateY(-100%); } /* Desplazamiento vertical completo */
+        }
+
+        /* Enlaces de imágenes */
+        .gallery a {
+            position: relative; /* Define una posición relativa */
+            display: inline-block; /* Hace que las imágenes sean elementos en línea */
+        }
+
+        /* Etiqueta flotante sobre las imágenes */
+        .gallery a::before {
+            content: "Ver más"; /* Texto de la etiqueta */
+            position: absolute; /* Posicionamiento absoluto */
+            bottom: 10px; /* Ubicación en la parte inferior */
+            left: 50%; /* Centra la etiqueta */
+            transform: translateX(-50%); /* Ajusta la posición */
+            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+            color: white; /* Texto blanco */
+            padding: 5px; /* Espaciado interno */
+            font-size: 14px; /* Tamaño del texto */
+            opacity: 0; /* Inicialmente invisible */
+            transition: opacity 30s ease-in-out; /* Efecto de aparición */
+        }
+
+        /* Muestra la etiqueta cuando el usuario pasa el cursor */
+        .gallery a:hover::before {
+            opacity: 1; /* Hace visible la etiqueta */
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="menu.css">
+      <nav style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="inicio.html">Inicio</a>
+        </div>
+         <br><br> <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="galeria.html">Galería</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 200px;">
+            <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 100px;">
+            <a href="contactos.html">Contacto</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="Proceso%20de%20Instalacion.html">Proceso de Instalacion</a>
+        </div>
+        <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="informacion2y4.html">Informacion 2 y 4 semestre</a>
+        </div>
+           <div style="border: 1px solid #000; padding: 10px; text-align: center; width: 300px;">
+            <a href="Recursos%20Adicionales.html">Recursos Adicionales</a>
+        </div>
+    </nav>
+
+    <h1>Galería</h1> <!-- Título de la página -->
+    
+    <!-- Contenedor de la galería -->
+    <div class="gallery-container">
+        <div class="gallery"> <!-- Galería con imágenes animadas -->
+            <a href="#"><img src="imagen1.jpg.jpg" alt="Imagen 1"></a> <!-- Imagen 1 -->
+            <figure>   <figcaption>ilustracion 1.CULTIVOS DEL SISTEMA ACUAPONICO</figcaption></figure>
+            <a href="#"><img src="imagen2.jpg.jpg" alt="Imagen 2"></a> <!-- Imagen 2 -->
+                         <figcaption>ilustracion 2. AREA DONDE ESTA INSTALADO EL SISTEMA DE ACUAPONIA</figcaption>
+            <a href="#"><img src="imagen3.jpg.jpg" alt="Imagen 3"></a> <!-- Imagen 3 -->
+                         <figcaption>ilustracion 3. LOS CULTIVOS DE HORTALIZADAS </figcaption>
+            <a href="#"><img src="imagen4.jpg.jpg" alt="Imagen 4"></a> <!-- Imagen 4 -->
+                         <figcaption>ilustracion 4. CONTENEDOR DE AGUA DONDE ESTAN LOS PECES</figcaption>
+            <a href="#"><img src="imagen5.jpg.jpg" alt="Imagen 5"></a> <!-- Imagen 5 -->
+                         <figcaption>ilustracion 5.LAS PLANTAS QUE SE VEN POR ENCIMA DE DONDE CAE EL AGUA DEL SISTEMA </figcaption>
+            <a href="#"><img src="imagen6.jpg.jpg" alt="Imagen 6"></a> <!-- Imagen 6 -->
+                         <figcaption>ilustracion 6. BARRILES POR DONDE TRANSITA EL AGUA</figcaption>
+             <a href="#"><img src="imagen7.jpg.jpg" alt="Imagen 7"></a> <!-- Imagen 7 -->
+                         <figcaption>ilustracion 7.OTRA PERSPECTIVA DONDE SE VEN LAS OTRAS PARTES DEL SISTEMA </figcaption>
+            <a href="#"><img src="imagen8.jpg.jpg" alt="Imagen 8"></a> <!-- Imagen 8 -->
+                         <figcaption>ilustracion 8. BARRILES DONDE PASA EL AGUA Y CONTENEDORES DE LOS CULTIVOS </figcaption>
+             <a href="#"><img src="imagen9.jpg" alt="Imagen 9"></a> <!-- Imagen 9 -->
+                         <figcaption>ilustracion 9.HORTALIZAS PRODUCIDAS POR EL SISTEMA ACUAPONICO </figcaption>
+             <a href="#"><img src="imagen10.jpg" alt="Imagen 10"></a> <!-- Imagen 10 -->
+                         <figcaption>ilustracion 10. ESTRUCTURA DE LOS COMPONENTES DEL SISTEMA DE ACUAPONIA</figcaption>
+             <a href="#"><img src="imagen11.jpg" alt="Imagen 11"></a> <!-- Imagen 11-->
+                         <figcaption>ilustracion 11. SE MUESTRAN LAS TILAPIAS DENTRO DE LOS CONTENEDORES</figcaption>
+             <a href="#"><img src="imagen12.jpg" alt="Imagen 12"></a> <!-- Imagen 12-->
+                         <figcaption>ilustracion 12. LOS RESULTADOS OBTENIDOS EN EL CULTIVO DE JITOMATES</figcaption>
+            
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
