@@ -6,7 +6,7 @@
     <title>Mi Sitio Web</title>
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="estilo.css">
-    <style>
+    <style>  GH
         aside, main {
             display: inline-block;
             vertical-align: top;
